@@ -289,13 +289,13 @@ namespace Twofish_NET
 		static private readonly int	ROUNDS_128 = 16;	/* default number of rounds for 128-bit keys*/
 		static private readonly int	ROUNDS_192 = 16;	/* default number of rounds for 192-bit keys*/
 		static private readonly int	ROUNDS_256 = 16;	/* default number of rounds for 256-bit keys*/
-		static private readonly int	MAX_KEY_BITS = 256;	/* max number of bits of key */
-		static private readonly int	MIN_KEY_BITS = 128;	/* min number of bits of key (zero pad) */
+		static private readonly int	MAX_KEY_BITS = 256; /* max number of bits of key */
+		/* static private readonly int	MIN_KEY_BITS = 128;	 min number of bits of key (zero pad) */
 
-//#define		VALID_SIG	 0x48534946	/* initialization signature ('FISH') */
-//#define		MCT_OUTER			400	/* MCT outer loop */
-//#define		MCT_INNER		  10000	/* MCT inner loop */
-//#define		REENTRANT			  1	/* nonzero forces reentrant code (slightly slower) */
+		//#define		VALID_SIG	 0x48534946	/* initialization signature ('FISH') */
+		//#define		MCT_OUTER			400	/* MCT outer loop */
+		//#define		MCT_INNER		  10000	/* MCT inner loop */
+		//#define		REENTRANT			  1	/* nonzero forces reentrant code (slightly slower) */
 
 		static private readonly int	INPUT_WHITEN = 0;	/* subkey array indices */
 		static private readonly int	OUTPUT_WHITEN = (INPUT_WHITEN + BLOCK_SIZE/32);
